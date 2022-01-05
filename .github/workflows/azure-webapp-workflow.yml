@@ -17,6 +17,7 @@ jobs:
     
     - run: |
         az webapp list --query "[?state=='Running']"
+        cd /
         terraform -version 
         terraform init
         pwd
