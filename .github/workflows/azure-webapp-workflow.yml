@@ -1,5 +1,5 @@
 
-# File: .github/workflows/workflow.yml Azure web app deployment Testing on 12/8/2021 ran again on 1/4/2021
+# File: .github/workflows/workflow.yml Azure web app deployment Testing on 12/8/2021 ran again on 1/5/2021
 
 on: [push]
 
@@ -17,4 +17,5 @@ jobs:
     
     - run: |
         az webapp list --query "[?state=='Running']"
+        terraform -version 
 
