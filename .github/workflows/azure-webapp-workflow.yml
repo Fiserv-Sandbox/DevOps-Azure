@@ -22,4 +22,12 @@ jobs:
         terraform plan 
   
         
+        resource "null_resource" "health_check" {
+
+                          provisioner "local-exec" {
+
+                            command = "/bin/bash demobashscripts.sh"
+                            #/home/raviraj_kannagala/scripts
+                     }
+                 }
 
