@@ -19,6 +19,7 @@ jobs:
         az webapp list --query "[?state=='Running']"
         terraform -version 
         terraform init
+        terraform plan 
   
         
 
