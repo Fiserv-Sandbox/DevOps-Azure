@@ -17,15 +17,6 @@ jobs:
     
     - run: |
         az webapp list --query "[?state=='Running']"
-                resource "null_resource" "health_check" {
-
-                          provisioner "local-exec" {
-
-                            command = "/bin/bash demobashscripts.sh"
-                            #/home/raviraj_kannagala/scripts
-                     }
-                 }
-                 
         terraform -version 
         terraform init
         terraform plan 
